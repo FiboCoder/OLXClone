@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Activity.AddAd"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivAdd1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/padrao"
+            android:layout_weight="1"
+            android:onClick="onClick"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivAdd2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/padrao"
+            android:layout_weight="1"
+            android:onClick="onClick"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivAdd3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/padrao"
+            android:layout_weight="1"
+            android:onClick="onClick"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etTitleAddAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Título"
+        android:background="@drawable/bg_edit_text"/>
+
+
+    <com.blackcat.currencyedittext.CurrencyEditText
+        android:id="@+id/etValueAddAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"
+        android:textColorHint="@android:color/darker_gray"
+        android:background="@drawable/bg_edit_text"
+        />
+
+    <com.santalu.maskara.widget.MaskEditText
+        android:id="@+id/etCellphoneNumberAddAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Telefone"
+        app:mask="(__) _____-____"
+        app:maskCharacter="_"
+        app:maskStyle="completable"
+        android:inputType="number"
+        android:background="@drawable/bg_edit_text"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etDescriptionAddAd"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Descrição"
+        android:background="@drawable/bg_edit_text"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btAddAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:theme="@style/standardButton"
+        android:text="Adicionar Anúncio"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="validateAddData"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

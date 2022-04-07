@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.OLX" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="standardButton" parent="Theme.AppCompat.Light">
+
+        <item name="colorControlHighlight">#D500F9</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+    </style>
+
+    <style name="Theme.OLX.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.OLX.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.OLX.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

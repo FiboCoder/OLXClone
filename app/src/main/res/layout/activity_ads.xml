@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Activity.Ads"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btFilterState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="?attr/buttonBarButtonStyle"
+            android:text="Estado"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"
+            android:textColor="@android:color/darker_gray"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btFilterCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="?attr/buttonBarButtonStyle"
+            android:text="Categoria"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAds"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

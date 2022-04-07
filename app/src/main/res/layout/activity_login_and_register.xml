@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="Activity.LoginAndRegister"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/logo"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etEmailLAR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/bg_edit_text"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etPassLAR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:padding="10dp"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:background="@drawable/bg_edit_text"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrar"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/stLAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btLAR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:theme="@style/standardButton"
+        android:text="Entrar"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
